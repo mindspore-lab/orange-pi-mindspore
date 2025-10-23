@@ -3,7 +3,7 @@
 [【开源实习】针对任务类型Object Detection，开发可在香橙派AIpro开发板运行的应用](https://gitee.com/mindspore/community/issues/ICJ5UE)
 任务编号：#ICJ5UE  
 
-基于`MindSpore`框架和`facebook/detr-resnet-50`模型实现的Video Classification应用  
+基于`MindSpore`框架和`google/owlvit-base-patch32`模型实现的Object Detection应用  
 
 ### 介绍
 目标检测（Object Detection） 是计算机视觉中的核心任务之一，旨在在图像或视频中同时 定位和识别目标物体。与图像分类不同，它不仅输出类别标签，还需要给出目标在图像中的边界框（bounding box）。  
