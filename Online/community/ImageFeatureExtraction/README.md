@@ -1,15 +1,22 @@
+# Image Feature Extraction
 
-# SegFormer Semantic Segmentation (MindSpore 2.6.0 / MindNLP 0.4.1) — OrangePi AIpro (FP16)
+## 1. 任务简介
 
-- **设备/环境**：Ascend 310B（OrangePi AIpro 20T24G），CANN 8.1RC1，MindSpore 2.6.0，MindNLP 0.4.1，Python 3.9  
-- **模型**：`nvidia/segformer-b0-finetuned-ade-512-512`（通过 HF 镜像自动下载）  
-- **数据集**：ADE20K（KaggleHub 自动下载）  
-- **精度/算子**：全链路 FP16；推理图中移除了 BatchNorm（替换为 Identity），避免 310B 上 BN 内核不支持。
+本任务展示了如何在 Orange Pi Alpro 开发板上运行图像特征提取（Image Feature Extraction）任务。选用 nvidia/segformer-b0-finetuned-ade-512-512 作为基础模型，进行图像特征提取任务，主要用于图像分类、目标检测等相关任务。
 
-## 使用方法
-1. 在 AIpro 上安装必要依赖（确保 CANN/MindSpore/MindNLP 版本与上文一致）。  
-2. 依次运行：
-   - 数据集下载（python data.py）
-   - 评测（python Image_Feature_Extraction.py）
-3. 输出：
-   - `打印 mIoU / Pixel Acc（在 validation 集上）
+## 2. 环境要求
+
+- **硬件**: Orange Pi Alpro (2GT24G)
+- **操作系统**: Ubuntu 镜像
+- **CANN 版本**: 8.0.0.beta1
+- **Python**: 3.9
+- **MindSpore**: 2.6.0 (Ascend 版本)
+- **MindSpore NLP**: 0.4.1
+
+## 3. 模型信息
+
+- **模型名称**: nvidia/segformer-b0-finetuned-ade-512-512
+- **下载地址**: [https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512](https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512)
+- **参数数目**: 约 3.75M 
+- **模型文件大小**: < 400 MB
+- **用途**: 使用原始模型进行语义分割
