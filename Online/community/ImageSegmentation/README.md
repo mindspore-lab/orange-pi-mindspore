@@ -6,7 +6,7 @@
 ## 2. 环境要求
 硬件: Orange Pi Alpro (20T24G)  
 操作系统: Ubuntu 镜像  
-CANN 版本: 8.0.0.beta1  
+CANN 版本: 8.1.RC1
 Python: 3.9  
 MindSpore: 2.6.0 (Ascend 版本)  
 MindSpore NLP: 0.4.1  
