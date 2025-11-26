@@ -157,6 +157,8 @@ MindSpore升级参考[昇思MindSpore官网--香橙派开发专区--环境搭建
    
 ### 预期结果
    多模态韩语图文问答，gradio前端交互
+   结果示例：
+   ![alt text](pictures/result.png)
 
 
 
