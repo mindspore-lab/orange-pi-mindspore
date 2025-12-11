@@ -124,7 +124,7 @@
 
     Model path      = models/Qwen2-VL-2B-Instruct
     Checkpoint path = saves/Qwen2-VL/lora/Qwen2-VL-sft-ko
-    Export path     = models/Qwen2-VL-sft-final
+    Export path     = models/qwen2ko_final
 
 点击“开始导出”，得到合并权重。
 
@@ -152,8 +152,8 @@ MindSpore升级参考[昇思MindSpore官网--香橙派开发专区--环境搭建
 
 ### 应用代码
 
-1. 将 `models/Qwen2-VL-sft-final` 拷贝至 OrangePi AIpro  
-2. 参考 `ko_test.ipynb` 进行前端展示与推理测试  
+1. 将 `models/qwen2ko_final` 拷贝至 OrangePi AIpro  
+2. 参考 `ko_infer.ipynb` 进行前端展示与推理测试  
    
 ### 预期结果
    多模态韩语图文问答，gradio前端交互
