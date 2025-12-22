@@ -34,13 +34,6 @@
 | [算子开发(operators_development)](./operators_development/) | 昇腾开发板上的算子开发与自定义算子接入昇思MindSpore框架教程。|
 | [测试工程(test)](./test/) | 昇腾开发板上的算子支持度测试脚本，一键获取当前CANN版本下对应昇思API的算子支持情况。|
 
-## 版本维护
-
-课程随昇思MindSpore及昇思MindSpore NLP套件迭代同步发布版本。
-
-| 版本名  | Python | CANN   | MindSpore | MindSpore NLP |
-| :----- | :----- |:------- |:------- | :------ |
-| dev    | 3.9    | 8.3RC1  | 2.7.1    | 0.6.0 |
 
 ## 常见问题（FAQ）
 
