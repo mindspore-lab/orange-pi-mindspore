@@ -28,21 +28,8 @@
 
 | 序号 | 课节    | 简介             | 课程资源                  | 能力认证入口 |
 | :-- | :------ | :--------------- | :----------------------- | :---------- |
-| 1   | 昇思+昇腾开发板：软硬结合玩转DeepSeek蒸馏模型开发实战     | 本课程以DeepSeek蒸馏模型为例，教你如何基于昇思套件，在香橙派开发板快速上手模型开发、微调、推理与性能优化，并分享实践经验。 | [PPT](./01_deepseek_r1_distill_qwen_1_5b/docs/昇思+昇腾开发板：软硬结合玩转DeepSeek蒸馏模型开发实战.pdf) · [代码](./01_deepseek_r1_distill_qwen_1_5b/code/) · [实验指导手册](./01_deepseek_r1_distill_qwen_1_5b/docs/) · [视频](https://www.hiascend.com/developer/courses/detail/1925362775376744449) (详见第1-5章) | 初级认证: [链接](https://www.hiascend.com/edu/certification/detail/babff09e41ee47beafa6d4c23caa5a6b) · [题目](./01_deepseek_r1_distill_qwen_1_5b/assessments/beginner_assessment.ipynb) <br> 中级认证: [链接](https://www.hiascend.com/edu/certification/detail/a8d8ded1822e436fa42690b3c817170b) · [题目](./01_deepseek_r1_distill_qwen_1_5b/assessments/intermediate_assessment.ipynb) |
+| 1   | 昇思+昇腾开发板：软硬结合玩转DeepSeek蒸馏模型开发实战     | 本课程以DeepSeek蒸馏模型为例，教你如何基于昇思套件，在香橙派开发板快速上手模型开发、微调、推理与性能优化，并分享实践经验。 | [PPT](./01_deepseek_r1_distill_qwen_1_5b/docs/昇思+昇腾开发板：软硬结合玩转DeepSeek蒸馏模型开发实战.pdf) · [代码](./01_deepseek_r1_distill_qwen_1_5b/code/) · [实验指导手册](./01_deepseek_r1_distill_qwen_1_5b/docs/deepseek-r1-distill-qwen-1-5b-practice-guide.md) · [视频](https://www.hiascend.com/developer/courses/detail/1925362775376744449) (详见第1-5章) | 初级认证: [链接](https://www.hiascend.com/edu/certification/detail/babff09e41ee47beafa6d4c23caa5a6b) · [题目](./01_deepseek_r1_distill_qwen_1_5b/assessments/beginner_assessment.ipynb) <br> 中级认证: [链接](https://www.hiascend.com/edu/certification/detail/a8d8ded1822e436fa42690b3c817170b) · [题目](./01_deepseek_r1_distill_qwen_1_5b/assessments/intermediate_assessment.ipynb) |
 | 2   | 昇思+昇腾开发板：软硬结合玩转minGPT开发实战     | 本课程讲深入基于昇思MindSpore的代码实践，带领开发者从头实现decoder-only模型，并深入展开混合精度训练实现。 | [PPT](./02_mingpt/docs/昇思+昇腾开发板：软硬结合玩转minGPT开发实战.pdf) · [代码](./02_mingpt/code/) · [实验指导手册](./02_mingpt/docs/mingpt-practice-guide.md) · [视频](https://www.hiascend.com/developer/courses/detail/1925362775376744449) (详见第6-10章)   | 高级认证: 链接 (*待上线*) · [题目](./02-minGPT/assessments/) |
-
-## 版本维护
-
-课程随昇思MindSpore及昇思MindSpore NLP套件迭代同步发布版本。
-
-| 版本名  | Python | CANN   | MindSpore | MindSpore NLP |
-| :----- | :----- |:------- |:------- | :------ |
-| dev    | 3.9    | 8.3RC1  | 2.7.1    | 0.6.0 |
-
-> 注：《昇思+昇腾开发板：软硬结合玩转DeepSeek蒸馏模型开发实战》仍在版本刷新中，开发者请优先基于如下版本进行实践:
-> - CANN: 8.1RC1
-> - MindSpore: 2.6.0
-> - MindSpore NLP: 0.4分支源码安装
 
 ## 常见问题（FAQ）
 

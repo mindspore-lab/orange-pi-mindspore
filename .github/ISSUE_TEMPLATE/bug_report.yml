@@ -34,9 +34,9 @@ body:
     required: true
 - type: input
   attributes:
-    label: OS Platform
-    description: Which operating system are you using? (e.g., Ubuntu 20.04)
-    placeholder: "Ubuntu 20.04"
+    label: CANN Version
+    description: What version of CANN are you using? (e.g., 8.3.RC1)
+    placeholder: "8.3.RC1"
   validations:
     required: true
 - type: input

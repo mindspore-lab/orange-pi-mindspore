@@ -2,18 +2,13 @@
   <h1>基于昇思+香橙派开发板的带框架应用实践案例</h1>
 </div>
 
-
-本路径下包含基于昇思MindSpore的香橙派开发板带框架应用案例，共分为两类：
-
-| 分类     | 描述                           |
-| :------ | :----------------------------- |
-| [inference](./inference/) | 官方开发的推理案例，涵盖CV、NLP、GAN、大模型等领域的经典模型。 |
-| [training](./training/) | 官方开发的训练案例，包含BERT预训练任务。 |
-| [community](./community/) | 社区开发者贡献的应用，涵盖文档问答、图像识别、文本分类、翻译、视频分类等多模态任务。|
+本路径下包含基于昇思MindSpore的香橙派开发板带框架应用案例。
 
 ## 模型案例清单和版本兼容
 
 ### 推理案例（inference）
+
+官方开发的推理案例，涵盖CV、NLP、GAN、大模型等领域的经典模型。
 
 | 模型/案例 | CANN | MindSpore | 开发板型号 |
 | :----- |:----- |:----- |:-----|
@@ -39,11 +34,15 @@
 
 ### 训练案例（training）
 
+官方开发的训练案例，包含BERT预训练任务。
+
 | 模型/案例 | CANN | MindSpore | 开发板型号 |
 | :----- |:----- |:----- |:-----|
 | [BERT](./training/01_bert/) | 8.1.RC1  | 2.6.0| 20T24G |
 
 ### 第三方应用案例(community)
+
+社区开发者贡献的应用案例，涵盖文档问答、图像识别、文本分类、翻译、视频分类等多模态任务。
 
 | 模型/案例 | 训练/推理 | CANN | MindSpore | 开发板型号 |
 | :----- |:----- |:----- |:-----|:-----|
@@ -61,10 +60,6 @@
 | [Video Classification](./community/12_video_classification/) | 推理 | 8.0.0.beta1  | 2.6.0 |8T16G |
 | [Mask Generation](./community/13_mask_generation/) | 推理 | 8.1.RC1 | 2.6.0 | 8T16G |
 | [Document Question Answering](./community/14_document_question_answering/) | 推理 | 8.0.0.beta1 | 2.6.0         | 20T24G           |
-
-### Awesome Projects
-
-如下收录了基于昇思MindSpore + 香橙派开发的优秀项目仓，供开发者们进行参考：
 
 ## 贡献与反馈
 

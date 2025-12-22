@@ -2,7 +2,7 @@ import gradio as gr
 import mindspore
 from mindnlp.transformers import AutoTokenizer, AutoModelForCausalLM, StaticCache
 from mindnlp.core import ops
-from mindnlp.configs import set_pyboost, ON_ORANGE_PI 
+from mindnlp.configs import set_pyboost, ON_ORANGE_PI
 import time
 import numpy as np
 
@@ -98,7 +98,6 @@ def decode_one_tokens(model, cur_token, input_pos, cache_position, past_key_valu
 
     return new_token
 
-
 # ---------------------------- 单句生成主流程 -----------------------------
 
 def generate_completion(prompt: str) -> str:
@@ -145,7 +144,7 @@ def generate_completion(prompt: str) -> str:
         )
         cache_position += 1
         generated_ids[:, cache_position] = next_token.int()
-       
+
         t_elapsed = time.time() - t_start
         print(f"[Token {step:02d}] {t_elapsed:.4f}s")  # 打印单步生成耗时
 
