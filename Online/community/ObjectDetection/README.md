@@ -3,11 +3,15 @@
 [【开源实习】针对任务类型Object Detection，开发可在香橙派AIpro开发板运行的应用](https://gitee.com/mindspore/community/issues/ICJ5UE)
 任务编号：#ICJ5UE  
 
-基于`MindSpore`框架和`facebook/detr-resnet-50`模型实现的Video Classification应用  
+基于`MindSpore`框架和`google/owlvit-base-patch32`模型实现的Object Detection应用  
 
 ### 介绍
 目标检测（Object Detection） 是计算机视觉中的核心任务之一，旨在在图像或视频中同时 定位和识别目标物体。与图像分类不同，它不仅输出类别标签，还需要给出目标在图像中的边界框（bounding box）。  
-facebook/detr-resnet-50 是 Meta AI提出的 DETR（DEtection TRansformer）模型的经典版本，采用 ResNet-50 作为卷积主干网络提取图像特征，再通过 Transformer 编码器-解码器结构实现端到端的目标检测。与传统检测器（如 Faster R-CNN、YOLO）依赖手工设计的候选框不同，DETR 直接把目标检测建模为序列预测问题，利用匈牙利匹配（Hungarian matching）在预测框和真实框之间建立一一对应关系，从而实现统一的目标检测框架。
+OwlViT（Open-vocabulary Vision Transformer）是 Google Research 提出的一种 **开放词汇目标检测模型**。  
+与传统检测模型（如 Faster R-CNN、DETR 等）仅能检测预定义类别不同，OwlViT 能够通过 **自然语言描述（Text Prompt）** 进行任意目标检测。
+换言之，用户无需在训练阶段指定固定的类别标签，只需在推理时输入提示词（如 *"a cat"*, *"a red car"*, *"a person wearing glasses"*），模型即可检测出符合描述的目标区域。
+OwlViT 的核心思想是将 **视觉表示（Vision Embedding）** 与 **文本表示（Text Embedding）** 映射到同一语义空间，通过 **跨模态相似度匹配** 来完成开放类别检测任务。
+
 
 
 ### 环境准备
@@ -40,8 +44,6 @@ Python == 3.9
 MindSpore == 2.6.0
 
 mindnlp == 0.4.1
-
-opencv-python  == 4.12.0.88
 
 pillow == 11.3.0
 
