@@ -31,7 +31,7 @@
 | 模型名                                                       | CANN版本                                   | Mindspore版本      | 香橙派开发板型号 |
 | :----------------------------------------------------------- | :----------------------------------------- | :----------------- | :--------------- |
 | [ResNet50](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/02-ResNet50) | 8.1.RC1                                    | 2.6.0              | 8T8G             |
-| [ViT](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/03-ViT) | 8.0.RC3.alpha002                           | 2.4.10             | 8T16G            |
+| [ViT](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/03-ViT) | 8.1.RC1               | 2.6.0              | 20T24G      |
 | [FCN](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/04-FCN) | 8.0.RC3.alpha002                           | 2.4.10             | 8T16G            |
 | [ShuffleNet](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/05-ShuffleNet) | 8.0.RC3.alpha002                           | 2.4.10             | 8T16G            |
 | [SSD](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/inference/06-SSD) | 8.1.RC1                                    | 2.6.0              | 8T8G             |
@@ -76,6 +76,7 @@
 | [VideoClassification](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/community/VideoClassification) | 8.0.0.beta1  | 2.6.0 |8T16G |
 | [MaskGeneration](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/community/MaskGeneration) | 8.1.RC1 | 2.6.0 | 8T16G |
 | [DocumentQuestionAnswering](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/community/DocumentQuestionAnswering) | 8.0.0.beta1 | 2.6.0         | 20T24G           |
+| [ArabicQuestionAnswering](https://github.com/mindspore-courses/orange-pi-mindspore/tree/master/Online/community/ArabicQuestionAnswering) | 8.1.RC1 | 2.6.0 | 20T24G |
 
 
 
