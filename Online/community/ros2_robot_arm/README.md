@@ -1,37 +1,44 @@
 # ros2_robot_arm
-[【开源实习】智能机械臂基于香橙派和MindSpore的深度学习AI推理功能和机械臂的二次开发](https://gitee.com/mindspore/community/issues/ICJ8TX)
 
-### 任务信息
+[【开源实习】智能机械臂基于香橙派和 MindSpore 的深度学习 AI 推理功能和机械臂二次开发](https://atomgit.com/mindspore/community/issues/1770)
 
-- **Issue**: [ICJ8TX](https://gitee.com/mindspore/community/issues/ICJ8TX)
-- **任务类型**: `香橙派开发板应用开发`
-- **开发者**: [shenyidong2026](https://github.com/22-Pig)
+## 项目简介
 
----
+本项目基于 OrangePi AI Pro、ROS2 与 YOLO 模型，实现积木识别、分拣和堆叠。
 
-### 项目说明
-- 本项目基于 Orange Pi AI Pro（香橙派）与昇腾AI开发板，结合 MindSpore 与 YOLO 模型，实现机械臂对任意位置积木的检测、分拣与堆叠功能。文档和示例以 Jupyter Notebook 格式提供，包含每步执行结果（已在笔记本中保留）。
+- 视觉推理：YOLO 检测积木位置
+- 机械控制：机械臂抓取、分类、堆叠
+- 可选模型路线：官方模型直接部署 / MindYOLO 自训练后转换 OM
 
----
+## 环境要求
 
-### 主要特性
-- 相机采集 + YOLOv5 推理（OM 模型）用于积木检测与定位
-- 透视变换与标定（十字标定板）保证像素坐标到机械臂坐标的变换
-- 机械臂控制（串口/扩展板）实现抓取、转移与堆叠
-- 包含校准（GUI）流程、参数微调（offset）与运行示例 GIF
-
----
-
-### 硬件与软件要求
-
-| 类别 | 要求 |
+| 项目 | 说明 |
 |---|---|
-| 硬件 | 昇腾AI开发板、Orange Pi AI Pro、机械臂套件、USB 摄像头 |
-| 开发板镜像 | Ubuntu |
-| CANN | 8.1RC1 |
-| MindSpore | 2.6.0 |
-| MindNLP | 0.4.1 |
-| Python | 3.9 |
+| 系统 | Ubuntu（开发板） |
+| ROS | ROS2 Humble |
+| Python | 3.9+ |
+| 硬件 | OrangePi AI Pro、机械臂、USB 摄像头 |
 
-### 致谢
-感谢MindSpore社区和昇腾AI开发者社区提供的技术支持和参考资料。
+## 总体预览
+
+1. 硬件组装与连线。
+2. 下载工程并安装依赖（ROS2、ais_bench、项目依赖）。
+3. 模型准备（二选一）：
+   - 方案 A：使用官方模型，放入两个 model 目录。
+   - 方案 B：在云侧进行 MindYOLO 训练，导出 ONNX 并转换 OM，再部署到开发板。
+4. 编译 ROS2 工作空间并加载环境。
+5. 首次执行相机校准。
+6. 运行单积木抓取，稳定后运行堆叠。
+
+> 详细步骤、截图和完整命令请查看教程 notebook：
+>
+> [ros2_robot_arm_tutorial.ipynb](./ros2_robot_arm_tutorial.ipynb)
+
+## 相关链接
+
+- Issue: https://atomgit.com/mindspore/community/issues/1770
+- MindYOLO 自训练参考: https://gitcode.com/shenyidong2025/mindyolo-cube.git
+
+## 致谢
+
+感谢 MindSpore 社区和昇腾 AI 开发者社区提供的支持。
